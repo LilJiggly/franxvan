@@ -1,6 +1,6 @@
-@import url(/css/grid.css);
-@import url(/css/buttons.css);
-@import url(/css/colors.css);
+@import url(grid.css);
+@import url(buttons.css);
+@import url(colors.css);
 
 * {
   margin: 0em;
@@ -19,7 +19,7 @@ body {
 
 header {
   background-image: 
-  /* linear-gradient(to bottom,      rgba(0, 0, 0, 0.3),      rgba(8, 0, 39, 1)), */ url("/images/background.jpg");
+  /* linear-gradient(to bottom,      rgba(0, 0, 0, 0.3),      rgba(8, 0, 39, 1)), */ url("../images/background.jpg");
 
   height: fit-content;
   background-position: center;

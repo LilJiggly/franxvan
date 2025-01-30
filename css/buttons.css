@@ -1,0 +1,49 @@
+/*****************************************/
+/* Button stylings                       */
+/*****************************************/
+.btn {
+  padding: 1em 2em;
+
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 0.5em;
+
+  border: none;
+  transition: 0.3s ease;
+  z-index: 10;
+  width: auto;
+  width: fit-content;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none !important;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/*****************************************/
+.btn-primary {
+  background: var(--primary-color);
+  border-style: none;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: var(--secondary-color);
+}
+
+/*****************************************/
+
+.btn-secondary {
+  color: var(--primary-color);
+  background: white;
+  border: 1px white solid;
+}
+
+.btn-secondary:hover {
+  color: white;
+  background: none;
+  border: 1px white solid;
+}
+
+/*****************************************/

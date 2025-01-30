@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Franxvan</title>
+    <meta name="description" content="Franxvan" />
+    <meta name="Sam Lansdaal" content="SitePoint" />
+
+    <meta property="og:title" content="Franxvan" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <header>
+    <div id="navbar" class="flex-row gap-1">
+      <a href="#" id="logo">
+        <img src="/images/logo.png" alt="" />
+      </a>
+
+      <ul class="nav-list flex-row gap-1">
+        <li class="nav-item">
+          <a href="#">Franxvan</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Primal</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="banner flex-column">
+      <div class="container flex-column max-8">
+        <div class="container max-5 flex-column gap-1">
+          <h1>Franxvan</h1>
+          <p>Goederen vervoer in en rond Amsterdam</p>
+          <a href="#intro" class="btn btn-primary"> Lees meer </a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <body>
+    <section id="intro">
+      <div class="container max-6">
+        <div class="intro flex-column gap-1">
+          <h2>Over [name]</h2>
+          <p>
+            I've put some other rules on the div to set the background image to
+            fill the whole div (cropping if needed) with the background-size:
+            cover. The width is 80%, so resize your browser to see how this
+            background-size works. (It will crop the image to ensure it fits
+            correctly).
+          </p>
+          <p>
+            If you wanted to add a semi opaque/semi transparent colour gradient
+            that goes on top of the background image, your first thought might
+            be to overlay another div (or use the :after css selector).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container max-6">
+        <div class="intro flex-column gap-1">
+          <h2>Contact</h2>
+          <p>Phonenumber</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

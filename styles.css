@@ -1,0 +1,147 @@
+@import url(css/grid.css);
+@import url(css/buttons.css);
+@import url(css/colors.css);
+
+* {
+  margin: 0em;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: gray;
+}
+
+header {
+  background-image: 
+  /* linear-gradient(to bottom,      rgba(0, 0, 0, 0.3),      rgba(8, 0, 39, 1)), */ url("/images/background.jpg");
+
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#navbar {
+  width: 100%;
+  height: auto;
+  padding: 2em;
+
+  background: var(--primary-color);
+  justify-content: space-between;
+}
+
+#logo > img {
+  height: 32px;
+}
+
+.nav-list {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* box-shadow: var(--primary-color)red 0em 0.1em 2em -0.2em; */
+}
+
+.nav-item {
+  list-style: none;
+  height: auto;
+}
+
+.nav-item a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0em;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  color: white;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  /* border: 1px salmon solid; */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.anchor-link {
+  display: block;
+  text-decoration-line: underline;
+}
+
+.anchor-link:visited {
+  display: block;
+  text-decoration-line: underline;
+  color: white;
+}
+
+.anchor-link:hover {
+  display: block;
+  text-decoration-line: underline;
+  color: var(--primary-color);
+}
+
+.max-10 {
+  max-width: var(--col-10);
+}
+
+.max-8 {
+  max-width: var(--col-8);
+}
+
+.intro {
+}

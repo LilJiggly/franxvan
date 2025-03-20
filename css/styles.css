@@ -19,7 +19,7 @@ body {
   font-style: normal;
   font-size: 1.25rem;
   color: black;
-  /* background: url(/images/Reference.png); */
+  /* background: url(/../images/Reference.png); */
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -56,7 +56,7 @@ p {
 }
 
 header {
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   height: fit-content;
   background-position: center center;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ nav img {
 
 .header-banner-image {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/banner.jpg");
+    url("../images/banner.jpg");
   background-position: center 80%;
 
   background-size: cover;
@@ -125,7 +125,7 @@ nav img {
 }
 
 section.intro {
-  background-image: url("images/intro.png");
+  background-image: url("../images/intro.png");
   background-position: center center;
   background-size: 80% auto;
   background-repeat: no-repeat;
@@ -212,17 +212,17 @@ section.services .service-cards {
 }
 
 .card-1 {
-  background: url(images/1.jpg);
+  background: url(../images/1.jpg);
   background-size: cover;
 }
 
 .card-2 {
-  background: url(images/2.jpg);
+  background: url(../images/2.jpg);
   background-size: cover;
 }
 
 .card-3 {
-  background: url(images/3.jpg);
+  background: url(../images/3.jpg);
   background-size: cover;
 }
 

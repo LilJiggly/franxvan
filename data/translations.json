@@ -8,9 +8,9 @@
       "ogDescription": "FranxVan biedt professioneel transport en verhuisservice in Amsterdam. Snel, betrouwbaar en zonder gedoe."
     },
     "nav": {
-      "home": "Home",
+      "intro": "Intro",
       "services": "Diensten",
-      "about": "Over Ons",
+      "pricing": "Prijzen",
       "contact": "Contact"
     },
     "header": {
@@ -49,7 +49,7 @@
       "toLabel": "Naar (afleveradres):",
       "selectCity": "Selecteer stad...",
       "cityNotListed": "Staat uw stad niet in de lijst?",
-      "contactNote": "Neem contact op voor een persoonlijke prijsopgave"
+      "contactNote": "Neem contact op voor een persoonlijke prijsopgave. Je vind de contact gegevens onderaan de pagina!"
     },
     "priceCalculator": {
       "errors": {
@@ -95,9 +95,9 @@
       "ogDescription": "FranxVan provides professional transport and moving services in Amsterdam. Fast, reliable and hassle-free."
     },
     "nav": {
-      "home": "Home",
+      "intro": "Intro",
       "services": "Services",
-      "about": "About Us",
+      "pricing": "Pricing",
       "contact": "Contact"
     },
     "header": {
@@ -136,7 +136,7 @@
       "toLabel": "To (delivery address):",
       "selectCity": "Select city...",
       "cityNotListed": "Don't see your city in the list?",
-      "contactNote": "Contact us for a personalized quote"
+      "contactNote": "Contact us for a personalized quote. You can find the contact details in the footer below!"
     },
     "priceCalculator": {
       "errors": {

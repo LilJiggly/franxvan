@@ -158,12 +158,15 @@ class LanguageSystem {
   }
 
   updateNavigation(navTranslations) {
-    const navLinks = document.querySelectorAll(".nav-link");
-    const navKeys = ["home", "services", "about", "contact"];
+    const navLinks = document.querySelectorAll(".nav-link[data-translate]");
 
-    navLinks.forEach((link, index) => {
-      if (navKeys[index] && navTranslations[navKeys[index]]) {
-        link.textContent = navTranslations[navKeys[index]];
+    navLinks.forEach((link) => {
+      const translateKey = link.getAttribute("data-translate");
+      if (translateKey && translateKey.startsWith("nav.")) {
+        const key = translateKey.replace("nav.", "");
+        if (navTranslations[key]) {
+          link.textContent = navTranslations[key];
+        }
       }
     });
   }

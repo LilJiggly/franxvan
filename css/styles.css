@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url(grid.css);
+@import url(buttons.css);
+@import url(colors.css);
+@import url(fonts.css);
+@import url(animations.css);
+@import url(nav.css);
+@import url(price-calculator-styles.css);
+
+* {
+  margin: 0em;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scrollbars globally */
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+/* Firefox horizontal scrollbar removal */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll on html */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure all sections stay within viewport */
+
+section {
+  min-height: 90vh;
+}
+
+section,
+footer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  padding: 5rem 3rem;
+}
+
+footer {
+  padding: 2rem;
+}
+
+section.fade-in,
+footer.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Don't apply fade effect to header section */
+.header {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.header {
+  height: 100vh; /* Fallback for older browsers */
+  height: 100dvh; /* Dynamic viewport height - accounts for Safari mobile bars */
+  width: 100%;
+  /* background-color: red; */
+  padding: 1em 1em;
+}
+
+.header .scroll {
+  position: absolute;
+  bottom: 2rem;
+  animation: bounce 5s ease-out 3s infinite;
+  transition: color 0.3s ease;
+}
+
+.header-banner-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/bg.jpg");
+  background-position: center;
+
+  background-size: cover;
+  border-radius: 1em;
+  height: 100%;
+
+  position: relative;
+
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* INTRO SECTION */
+section.intro {
+  background-image: url("../images/intro.png");
+  background-position: center center;
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/* INTRO SECTION */
+
+/* VIDEO SECTION */
+section.video {
+  display: flex;
+  justify-content: center;
+}
+
+section.video video {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+/* VIDEO SECTION */
+
+/* DIENSTEN SECTION */
+.diensten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 5rem 0rem;
+  background: var(--bg-color-light) url(../images/houses.png) no-repeat center
+    bottom/contain;
+}
+
+.diensten-text {
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.diensten .service-cards {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  color: white;
+  /* text-align: center; */
+  padding: 1rem 2rem;
+  overflow-x: scroll;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+  min-width: 300px;
+  transition: 0.3s;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  cursor: pointer;
+  opacity: 0.95;
+  transform: translateY(-5px);
+  box-shadow: var(--cards-box-shadow);
+}
+
+.card-1::before,
+.card-2::before,
+.card-3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--cards-overlay);
+}
+
+.card-1 {
+  background: url(../images/1.jpg) center/cover;
+}
+
+.card-2 {
+  background: url(../images/2.jpg) center/cover;
+}
+
+.card-3 {
+  background: url(../images/3.jpg) center/cover;
+}
+
+.card-p,
+.card-title {
+  z-index: 10;
+}
+
+/* DIENSTEN SECTION */
+
+/* CONTACT SECTION */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact-text {
+  gap: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.intro-text3 h3,
+.intro-text3 ul {
+  width: 100%;
+}
+
+.intro-text3 ul {
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  color: whitesmoke;
+  background-color: black;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-text {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-text p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer-text svg {
+  max-width: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1em;
+}
+
+footer .container p {
+  /* text-wrap: nowrap; */
+  max-width: 32ch;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .intro-text,
+  .intro-text2,
+  .intro-text3,
+  .service-cards,
+  .services {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    min-width: 75%;
+  }
+
+  .diensten-text,
+  .contact-text {
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  section.diensten .service-cards {
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: scroll; */
+    padding: 1rem 2rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  section.intro,
+  section.diensten {
+    padding: 3rem 0rem;
+  }
+
+  section.video,
+  section.services {
+    padding: 1rem;
+  }
+
+  section.header {
+    padding: 0.5rem;
+  }
+
+  section.contact {
+    padding: 3rem 1rem;
+  }
+
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cards .card-1,
+  .service-cards .card-2,
+  .service-cards .card-3 {
+    max-height: 300px;
+  }
+  .m-fw {
+    max-width: 100%;
+  }
+}
+
+/* Safari Mobile Viewport Fixes */
+@supports (height: 100dvh) {
+  section.header {
+    height: 100dvh; /* Dynamic viewport height for Safari mobile */
+  }
+}
+
+/* Alternative for browsers that don't support dvh */
+@supports not (height: 100dvh) {
+  @media screen and (max-width: 768px) {
+    section.header {
+      height: 100svh; /* Small viewport height as fallback */
+      min-height: -webkit-fill-available; /* iOS Safari specific */
+    }
+  }
+}
+
+/* Additional mobile viewport optimization */
+@media screen and (max-width: 768px) {
+  /* Ensure mobile viewport is properly handled */
+  html {
+    height: -webkit-fill-available;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  /* Fix for any other sections using viewport heights */
+  .full-height {
+    height: 100vh;
+    height: 100dvh;
+  }
+}

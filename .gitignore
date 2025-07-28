@@ -1,0 +1,104 @@
+# FranxVan Website - Git Ignore File
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if you add build tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build and Distribution
+dist/
+build/
+.cache/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Image Optimization Cache (if you use image optimization tools)
+.imageoptim-cache/
+
+# Unused Images
+images/unused/
+
+# CSS Preprocessor Cache (if you use Sass/Less later)
+.sass-cache/
+*.css.map
+
+# Local Development
+.local/
+local/
+
+# Analytics and Tracking (keep these private)
+google-analytics.json
+analytics-config.json
+
+# Personal Notes and Documentation
+notes.md
+TODO.md
+PRIVATE.md
+
+# Test Files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Coverage Reports
+coverage/
+.nyc_output/
+
+# Deployment Scripts (keep deployment configs private)
+deploy.sh
+deploy.json
+.deploy/
+
+# Database Files (if you add a database later)
+*.db
+*.sqlite
+*.sqlite3
+
+# WordPress (if you ever migrate to WordPress)
+wp-config.php
+wp-content/uploads/
+
+# Miscellaneous
+*.zip
+*.tar.gz
+*.rar

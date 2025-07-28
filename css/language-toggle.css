@@ -1,9 +1,5 @@
 /* Language Toggle Styling - Created for multilingual functionality */
 
-.language-toggle-item {
-  margin-left: auto; /* Push to the right side of nav */
-}
-
 .language-toggle {
   display: flex;
   gap: 0.5rem;

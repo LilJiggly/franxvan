@@ -15,13 +15,14 @@
     },
     "header": {
       "title": "FranxVan",
+      "subtitle": "Goederen vervoer in en rond Amsterdam",
       "scrollText": "Scroll naar beneden"
     },
     "intro": {
       "subtitle": "Snel, betrouwbaar en zonder gedoe!",
       "heading": "Goederen vervoer in en rond Amsterdam",
       "text": "Heb je een klus, een spoedbezorging of een verhuizing in Amsterdam en omstreken? Ik sta klaar met mijn bestel- en verhuisbus om je snel en vakkundig te helpen. Van kleine transporten tot grotere klussen – ik zorg ervoor dat alles soepel en zonder gedoe verloopt. Neem contact op en ontdek wat ik voor je kan betekenen!",
-      "contactBtn": "Contact",
+      "contactBtn": "Prijzen",
       "servicesBtn": "Diensten"
     },
     "services": {
@@ -102,13 +103,14 @@
     },
     "header": {
       "title": "FranxVan",
+      "subtitle": "Goods transport in and around Amsterdam",
       "scrollText": "Scroll down"
     },
     "intro": {
       "subtitle": "Fast, reliable and hassle-free!",
       "heading": "Goods transport in and around Amsterdam",
       "text": "Need help with a job, urgent delivery or moving in Amsterdam and surrounding areas? I'm ready with my delivery and moving van to help you quickly and professionally. From small transports to larger jobs – I ensure everything runs smoothly and without hassle. Get in touch and discover what I can do for you!",
-      "contactBtn": "Contact",
+      "contactBtn": "Pricing",
       "servicesBtn": "Services"
     },
     "services": {

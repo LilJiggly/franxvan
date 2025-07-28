@@ -229,7 +229,7 @@ class PriceCalculator {
     );
 
     // Calculate prices
-    const estimatedHours = Math.ceil(totalTime * 2) / 2; // Round to nearest 0.5 hour
+    const estimatedHours = Math.ceil(totalTime); // Round up to full hours only
     const priceExBTW = estimatedHours * franxvanPricing.hourlyRate;
     const btwAmount = priceExBTW * franxvanPricing.btw;
     const priceIncBTW = priceExBTW + btwAmount;

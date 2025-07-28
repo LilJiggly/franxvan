@@ -10,7 +10,7 @@ h1 {
   font-family: "monster bites";
   font-style: italic;
   font-size: clamp(2.5rem, 8vw, 10rem);
-  -webkit-text-stroke: 0.0001px black;
+  -webkit-text-stroke: 1px black;
   color: #f15a29;
   text-shadow: 0.5rem 0.5rem rgb(0, 0, 0);
   transition: 0.3s ease;
